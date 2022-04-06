@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <title>Abdulaziz Al Jabri's CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ICONS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <!-- NAVBAR -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Fredoka&amp;display=swap'>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
 
     <!-- SMOOTH SCROLL TRANSITION -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon.png">
   </head>
 
   <body>
@@ -29,7 +31,7 @@
     <section id="hero">
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1 class="name-title">Abdulaziz Saud Al Jabri</h1>
-        <p class="name-title subtitle"> <span class="typed" data-typed-items="Computer Scientist, Developer, Photographer"></span></p>
+        <p class="name-title subtitle">I'm  <span class="typewrite" data-period="2000" data-type='["a Computer Scientist", "a Developer", "a Photographer", "Abdulaziz, and this is my CV."]'></span></p>
       </div>
     </section>
 
@@ -37,7 +39,15 @@
     <div id="about" class="about" data-aos="fade-up">
       <h1  class="font bulletpoint">About Me<h1>
       <p class="para-text">
-        Lorem ipsum dolor sit amet
+        I am an Undergraduate COHORT 2020 student at SQU majoring in Cybersecurity. I have proficient computer and ICT skills,
+         as well as excellent communication and leadership adroitness. Very much looking forward to utilize and
+         develop my skills through a challenging and exigent position in a well-respected company.
+      </p>
+      <br>
+      <p class="para-text">
+        I heavily enjoy photography and traveling, as well as reading books and novels and playing the piano.
+        I am an outgoing person, I like to socialize and spend time with friends, families and colleagues. I can work solo
+        and with a team, I can easily adapt and respond correctly under challenging work situations and enviroments.
       </p>
     </div>
 
@@ -45,52 +55,55 @@
     <div class="container">
       <div id="certs" data-aos="fade-up">
         <h1  class="font bulletpoint">My Certificates</h1>
-
-        <br>
-        <table>
-          <tr>
-            <td>
-              <a href="img/CS50.png">
-                <img class="cert-imgs" src="img/CS50.png" alt="CS50">
-              </a>
-            </td>
-
-            <td>
-              <a href="img/HighSchool.jpg">
-                <img class="cert-imgs" src="img/HighSchool.jpg" alt="CS50">
-              </a>
-            </td>
-
-            <td>
-              <a href="img/IELTS.jpg">
-                <img class="cert-imgs" src="img/IELTS.jpg" alt="CS50">
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <a href="img/SpeakingPioneers.jpg">
-                <img class="cert-imgs" src="img/SpeakingPioneers.jpg" alt="CS50">
-              </a>
-            </td>
-
-            <td>
-              <a href="img/TechnoKids.jpg">
-                <img class="cert-imgs" src="img/TechnoKids.jpg" alt="CS50">
-              </a>
-            </td>
-
-            <!-- <td>
-              <a href="img/CS50.png">
-                <img class="cert-imgs" src="img/CS50.png" alt="CS50">
-              </a>
-            </td> -->
-          </tr>
-        </table>
       </div>
     </div>
 
+    <div class="filters filter-button-group" data-aos="fade-up">
+    	<ul>
+    		<li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+    		<li><a href="javascript:void(0);" data-filter="school">School</a></li>
+    		<li><a href="javascript:void(0);" data-filter="CS">Computer Science</a></li>
+        <li><a href="javascript:void(0);" data-filter="other">Other</a></li>
+    	</ul>
+    </div>
+
+    <div id="container" class="isotope" data-aos="fade-up">
+  		<div class="grid-item" data-filter="CS">
+        <a class="popupimg" href="img/CS50.png">
+          <img src="img/CS50.png">
+        </a>
+      </div>
+
+
+      <div class="grid-item" data-filter="school">
+        <a class="popupimg" href="img/HighSchool.jpg">
+          <img src="img/HighSchool.jpg">
+        </a>
+      </div>
+
+
+  		<div class="grid-item" data-filter="other">
+        <a class="popupimg" href="img/IELTS.png">
+          <img src="img/IELTS.png">
+        </a>
+      </div>
+
+
+      <div class="grid-item" data-filter="school">
+        <a class="popupimg" href="img/SpeakingPioneers.jpg">
+          <img src="img/SpeakingPioneers.jpg">
+        </a>
+      </div>
+
+
+  		<div class="grid-item" data-filter="school">
+        <a class="popupimg" href="img/TechnoKids.jpg">
+          <img src="img/TechnoKids.jpg">
+        </a>
+      </div>
+  	</div>
+
+    <div data-aos="fade-up" class="isotope-pager" style="text-align:center;"></div>
 
     <!-- WORK EXP -->
     <br>
@@ -163,27 +176,27 @@
     </div>
 
     <!-- PROJECTS -->
-    <!-- <div id="projs" class="projects" data-aos="fade-up">
+    <div id="projs" class="projects" data-aos="fade-up">
       <h1 class="font bulletpoint">Projects<h1>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Dec 20th, 2018)</span> |  Developing an obstacle avoiding robot car using an Arduino UNO
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Dec 20th, 2018)</span> |  Developed an obstacle avoiding robot car using an Arduino UNO
         </p>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(June 25th, 2019)</span> |  Developing a micro servo robotic arm
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(June 25th, 2019)</span> |  Developed a micro servo robotic arm
         </p>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Nov 16th, 2019)</span> | Developing a timer-controlled relay switch
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Nov 16th, 2019)</span> | Developed a timer-controlled relay switch
         </p>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Oct  5th,  2020)</span> | Developing  an HTML  java-based  snake  game  that  can  be  played  on  any computer browser.  This was  my  final  project  for  the  Harvard’s introduction  to  Computer Science course
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Oct  5th,  2020)</span> | Developed an HTML  java-based  snake  game  that  can  be  played  on  any computer browser.  This was  my  final  project  for  the  Harvard’s introduction  to  Computer Science course
         </p>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Currently)</span> | Developing a clinic website that can let the client book appointments for a client
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Apr 4th, 2022)</span> | Developed a clean CV/Resume website that showcases my skills and achievements
         </p>
-        <p class="para-text">
-          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Currently)</span> | Developing a timer-controlled relay switch
+        <p class="para-text-proj">
+          <span>&#8226;</span> <span style="font-weight: bold; font-size: 18px; font-family: 'Libre Franklin'">(Currently)</span> | Developing a clinic website that can let the client book appointments for a patient that they can manage, and search for nearest clinic for them
         </p>
-    </div> -->
+    </div>
 
     <!-- CONTACT -->
     <div id="contact" class="contact_me" data-aos="fade-up">
@@ -243,12 +256,12 @@
           </table>
         </div>
         <div class="div2" style="float:left">
-          <form class="contact-form-input" action="https://httpbin.org/post" method="post">
-            <input type="text" name="name" id="name" placeholder="Your Name">
+          <form class="contact-form-input" action="https://formsubmit.co/abdulaziz.s.jabri@gmail.com" method="POST">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
 
-            <input type="text" name="email" id="email" placeholder="Your Email">
+            <input type="text" name="email" id="email" placeholder="Your Email" required>
 
-            <textarea name="message" name="message" placeholder="Message" rows="5"></textarea>
+            <textarea name="message" name="message" placeholder="Message" rows="5" required></textarea>
 
             <input type="submit" value="Send Message">
           </form>
@@ -264,7 +277,6 @@
           <h3>Abdulaziz Al Jabri</h3>
           <br>
           <br>
-          <!-- <p>Please contact me for any clarification or enquiries using the Social Media links below or by Email. </p> -->
           <p>Below you can find my Social Media links and my Gmail.</p>
           <br>
           <p>You can download my CV as a PDF file by clicking on the download icon below</p>
@@ -356,7 +368,6 @@
           <li class="navbar__item">
             <a href="#contact" class="navbar__link"><i data-feather="at-sign"></i><span>Contact</span></a>
           </li>
-          <li>
           <!-- <li class="navbar__item">
             <a onclick="darkmode" class="navbar__link"><i data-feather="moon"></i><span>Dark Mode</span></a>
           </li> -->
@@ -364,7 +375,22 @@
       </div>
     </nav>
 
-    <script src='https://unpkg.com/feather-icons'></script><script  src="./script.js"></script>
+    <script src='https://unpkg.com/feather-icons'></script>
+
+    <script type="text/javascript">
+      feather.replace();
+    </script>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script><script  src="./script.js"></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+
+    <script  src="./script.js"></script>
 
   </body>
 </html>
