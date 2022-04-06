@@ -1604,6 +1604,7 @@ body {
 /* ---------------------------------- FILTER ---------------------------------- */
 #container {
   margin: auto;
+  padding-left: 100px;
 }
 
 .grid-item {
@@ -1631,7 +1632,7 @@ body {
 }
 
 .filters {
-	width: 35%;
+	width: 50%;
 	text-align: center;
 	padding-bottom: 35px;
 	padding-top:20px;
