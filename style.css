@@ -32,17 +32,17 @@ html {
 }
 
 .name-title {
-  font-size: 5em;
+  font-size: 100%;
   font-family: 'Red Hat Text', sans-serif;
   /* text-align: center; */
   color: black;
   margin-top: 23%;
-  margin-left: 20%;
   font-weight: bold;
+  text-align: center;
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: 100%;
   margin-top: 10px;
 }
 
