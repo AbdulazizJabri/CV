@@ -30,7 +30,7 @@ html {
 }
 
 .name-title {
-  font-size: 80px;
+  font-size: 5em;
   font-family: 'Red Hat Text', sans-serif;
   text-align: center;
   color: black;
@@ -39,7 +39,7 @@ html {
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 2em;
   margin-top: 10px;
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 .para-text {
-  font-size: 18px;
+  font-size: 1.2em;
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
   margin-left: 13%;
@@ -63,7 +63,7 @@ html {
   margin-left: 13%;
   margin-right: 7%;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1.2em;
   font-family: 'Libre Franklin', sans-serif;
   text-align: justify;
 }
@@ -175,6 +175,10 @@ section {
 .contact_table td{
   padding: 15px;
   font-family: 'Libre Franklin' ,sans-serif;
+}
+
+.contact_me {
+  margin-left: 3em;
 }
 
 .contact-icon-title {
