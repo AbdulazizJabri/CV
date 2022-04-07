@@ -127,16 +127,16 @@ section {
 --------------------------------------------------------------*/
 .sk_container {
   width: 100%;
-  margin: 10px 0 10px 0;
+  margin: 1em 0 1em 0;
   border: 1px solid #45505b;
   border-radius: 6px;
 }
 
 
 .beside_percent {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
-  margin-left: 40px;
+  margin-left: 6em;
 }
 
 .beside {
@@ -242,6 +242,8 @@ input[type=submit]:hover {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 #footer h3 {
