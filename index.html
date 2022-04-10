@@ -76,8 +76,8 @@
     <section class="about section" id="about">
       <div class="container">
         <div class="about-info">
-          <h3 class="sub-heading">About me</h3>
-          <!-- <h1 class="heading">Better design,<br> better experiences</h1> -->
+          <!-- <h3 class="sub-heading">About me</h3> -->
+          <h1 class="heading">About me</h1>
           <p class="text">
             I am an Undergraduate COHORT 2020 student at SQU majoring in Cybersecurity. I have proficient computer
             and ICT skills, as well as excellent communication and leadership adroitness. Very much looking forward
@@ -117,8 +117,8 @@
       <div class="container">
         <div class="portfolio-header">
           <div class="portfolio-title">
-            <h3 class="sub-heading">Certificates</h3>
-            <h1 class="heading">Latest Projects</h3>
+            <!-- <h3 class="sub-heading">Certificates</h3> -->
+            <h1 class="heading">Certificates</h3>
           </div>
           <div class="filter-btns">
             <button class="filter-btn" data-filter="all">All</button>
@@ -239,8 +239,8 @@
       <div class="container">
         <div class="skills-box">
           <div class="box-heading">
-            <h3 class="sub-heading">My skills</h3>
-            <h1 class="heading">Let me help you</h1>
+            <!-- <h3 class="sub-heading">My Skills</h3> -->
+            <h1 class="heading">My Skills</h1>
             <div class="box-desc">
             </div>
           </div>
@@ -326,45 +326,75 @@
       <div class="container">
         <div class="services-info">
           <div class="milestones">
-            <div class="ml">
-              <h2 class="number"><span data-target="11">0</span>+</h2>
-              <h5>Years</h5>
-            </div>
-            <div class="ml">
-              <h2 class="number"><span data-target="79">0</span>+</h2>
-              <h5>Projects</h5>
-            </div>
-            <div class="ml">
-              <h2 class="number"><span data-target="95">0</span>+</h2>
-              <h5>Clients</h5>
-            </div>
-          </div>
-          <div class="cta">
-            <a href="./assets/Abdulaziz Al Jabri's CV.pdf" download class="btn secondary-btn">Download CV</a>
           </div>
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section class="contact section" id="contact">
       <div class="container">
         <div class="contact-info">
-          <h3 class="sub-heading">Contact me</h3>
-          <h1 class="heading">Let's work together</h1>
+          <!-- <h3 class="sub-heading">Contact me</h3> -->
+          <h1 class="heading">Contact Me</h1>
           <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, molestias non quia
-            expedita earum commodi!
+            Please contact me for any clarification or enquiries by using the message box.
           </p>
-          <a href="mailto:markusraik@mail.com" class="mail">markusraik@mail.com <i class="uil uil-arrow-right"></i></a>
+
+          <table class="contact_table">
+                  <td>
+                    <ul class="wrapper2">
+                    <a href="mailto:abdulaziz.s.jabri@gmail.com">
+                    <li class="icon gmail2">
+                      <span><i class="fa fa-envelope"></i></span>
+                    </li>
+                    </a>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="contact-icon-title">Email:</p>
+                    <p>abdulaziz.s.jabri@gmail.com</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <ul class="wrapper2">
+                    <a href="tel:+96897744003">
+                    <li class="icon phonumber">
+                      <span><i class="fas fa-phone"></i></span>
+                    </li>
+                    </a>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="contact-icon-title">Call me:</p>
+                    <p>+968 97744003</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <ul class="wrapper2">
+                    <a href="https://goo.gl/maps/by5r3H7Sfq5bK1CF8">
+                    <li class="icon location">
+                      <span><i class="fas fa-map-marker-alt	"></i></span>
+                    </li>
+                    </a>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="contact-icon-title">Location:</p>
+                    <p>Oman, Muscat</p>
+                  </td>
+                </tr>
+          </table>
         </div>
 
-        <form action="index.html" class="contact-form">
-          <h3>Send me a message</h3>
-          <input type="text" class="form-input" placeholder="Your Name" required>
-          <input type="email" class="form-input" placeholder="Your Email" required>
-          <textarea placeholder="Project Details" class="form-input" required></textarea>
-          <input type="submit" value="Send" class="btn">
+        <form action="https://formsubmit.co/abdulaziz.s.jabri@gmail.com" class="contact-form" method="POST">
+          <input type="text" class="form-input" placeholder="Your Name" name="name" id="name" required>
+          <input type="email" class="form-input" placeholder="Your Email" name="email" id="email" required>
+          <textarea placeholder="Message" class="form-input" name="message" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
         </form>
       </div>
     </section>
@@ -395,7 +425,43 @@
     </div>
   </footer>
 
+  <nav class="navbar">
+    <div class="font">
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link"><i data-feather="home"></i><span>Home</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link"><i data-feather="users"></i><span>About</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#certs" class="navbar__link"><i data-feather="award"></i><span>Certificates</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#work-exp" class="navbar__link"><i data-feather="edit"></i><span>Work Experiences</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#skills" class="navbar__link"><i data-feather="book"></i><span>Skills</span></a>
+        </li>
+        <!-- <li class="navbar__item">
+          <a href="#projs" class="navbar__link"><i data-feather="package"></i><span>Projects</span></a>
+        </li> -->
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link"><i data-feather="at-sign"></i><span>Contact</span></a>
+        </li>
+        <!-- <li class="navbar__item">
+          <a onclick="darkmode" class="navbar__link"><i data-feather="moon"></i><span>Dark Mode</span></a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
   <!-- JS FILES -->
+  <script src='https://unpkg.com/feather-icons'></script>
+
+  <script type="text/javascript">
+    feather.replace();
+  </script>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/mixitup.min.js"></script>
