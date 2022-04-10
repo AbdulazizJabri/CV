@@ -1233,43 +1233,54 @@ a:visited {
   transform: translate(0, -50%) scale(0.95);
 }
 
-/* --------------- Footer Styling --------------- */
-
-footer {
-  padding: 4rem 0;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer_contact {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffff;
+  color: #45505b;
+  text-align: center;
 }
 
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+#footer {
+  background: #ffff;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
 }
 
-footer .social-media {
-  display: flex;
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
 }
 
-.social-link {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-left: 1rem;
-  background-color: var(--bg-color-1);
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
+#footer .copyright {
+  margin: 0 0 5px 0;
 }
-
-.social-link:hover {
-  color: var(--main-color-1);
+#footer .credits {
+  font-size: 13px;
 }
 
 /* --------------- 1000px Screens --------------- */
 
 @media (max-width: 1000px) {
+
+  .navbar {
+    visibility: hidden;
+  }
+  
   .sub-heading {
     font-size: 0.75rem;
   }
@@ -1367,6 +1378,9 @@ footer .social-media {
 /* --------------- 768px Screens --------------- */
 
 @media (max-width: 768px) {
+
+
+
   :root {
     --section-padding: 4.5rem;
   }
