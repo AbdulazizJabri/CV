@@ -1,4 +1,3 @@
-const header = document.querySelector("header");
 
 const first_skill = document.querySelector(".skill:first-child");
 const sk_counters = document.querySelectorAll(".counter span");
@@ -18,7 +17,6 @@ const links = document.querySelectorAll(".nav-link");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
-const hamburger = document.querySelector(".hamburger");
 
 window.addEventListener("scroll", () => {
   activeLink();
@@ -37,15 +35,6 @@ function updateCount(num, maxNum) {
   }
 }
 
-/* --------------- Sticky Navbar --------------- */
-
-function stickyNavbar() {
-  header.classList.toggle("scrolled", window.pageYOffset > 0);
-}
-
-stickyNavbar();
-
-window.addEventListener("scroll", stickyNavbar);
 
 /* --------------- Reveal Animation --------------- */
 
@@ -170,40 +159,6 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-/* --------------- Change Active Link On Scroll --------------- */
-
-function activeLink() {
-  let sections = document.querySelectorAll("section[id]");
-  let passedSections = Array.from(sections)
-    .map((sct, i) => {
-      return {
-        y: sct.getBoundingClientRect().top - header.offsetHeight,
-        id: i,
-      };
-    })
-    .filter((sct) => sct.y <= 0);
-
-  let currSectionID = passedSections.at(-1).id;
-
-  links.forEach((l) => l.classList.remove("active"));
-  links[currSectionID].classList.add("active");
-}
-
-activeLink();
-
-/* --------------- Open & Close Navbar Menu --------------- */
-
-hamburger.addEventListener("click", () => {
-  document.body.classList.toggle("open");
-  document.body.classList.toggle("stopScrolling");
-});
-
-links.forEach((link) =>
-  link.addEventListener("click", () => {
-    document.body.classList.remove("open");
-    document.body.classList.remove("stopScrolling");
-  })
-);
 /* --------------- Typewriter --------------- */
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
