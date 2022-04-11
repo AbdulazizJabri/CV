@@ -61,6 +61,11 @@ body.dark .form-input:hover {
   filter: brightness(110%);
 }
 
+#darkModeIcon {
+  width: 50px;
+  cursor: pointer;
+}
+
 /* --------------- General Styles --------------- */
 
 *,
@@ -1769,14 +1774,16 @@ a:visited {
   height: calc(100vh - 4rem);
 }
 .navbar__link {
+  text-decoration: none;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3.5rem;
   width: 5.5rem;
-  color: black;
+  color: var(--bg-color);
   transition: 250ms ease all;
+
 }
 .navbar__link span {
   position: absolute;
