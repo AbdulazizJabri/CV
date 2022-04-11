@@ -243,7 +243,6 @@
       </div>
     </section>
 
-
     <!-- CONTACT -->
     <section class="contact section" id="contact">
       <div class="container">
@@ -305,9 +304,11 @@
         </div>
 
         <form action="https://formsubmit.co/abdulaziz.s.jabri@gmail.com" class="contact-form" method="POST">
+          <input type="hidden" name="_captcha" value="false">
           <input type="text" class="form-input" placeholder="Your Name" name="name" id="name" required>
           <input type="email" class="form-input" placeholder="Your Email" name="email" id="email" required>
           <textarea placeholder="Message" class="form-input" name="message" required></textarea>
+          <input type="hidden" name="_next" value="https://abdulazizjabri.github.io/CV">
           <input type="submit" value="Send Message" class="btn">
         </form>
       </div>
