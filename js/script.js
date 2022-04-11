@@ -93,23 +93,6 @@ skillsCounter();
 
 /* --------------- Services Counter Animation --------------- */
 
-let mlPlayed = false;
-
-function mlCounter() {
-  if (!hasReached(ml_section)) return;
-  mlPlayed = true;
-
-  ml_counters.forEach((ctr) => {
-    let target = +ctr.dataset.target;
-
-    setTimeout(() => {
-      updateCount(ctr, target);
-    }, 400);
-  });
-}
-
-mlCounter();
-
 /* --------------- Portfolio Filter Animation --------------- */
 
 let mixer = mixitup(".portfolio-gallery", {
