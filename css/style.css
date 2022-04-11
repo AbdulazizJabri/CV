@@ -66,6 +66,8 @@ body.dark .form-input:hover {
   width: 50px;
   cursor: pointer;
   float: right;
+  margin-right: 30px;
+  padding-top: 30px;
 }
 
 /* --------------- General Styles --------------- */
