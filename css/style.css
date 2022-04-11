@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
-/* --------------- Website Theme --------------- */
 
 :root {
   --hue-1: 257;
@@ -30,31 +29,6 @@ body.dark {
   --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
   --heading-color: hsl(var(--hue-1), 100%, 95%);
   --text-color: hsl(var(--hue-1), 14%, 51%);
-}
-
-body.dark .st1 {
-  fill: hsl(var(--hue-1), 18%, 29%);
-}
-
-body.dark .shape.square {
-  opacity: 0.15;
-}
-
-body.dark .shape.triangle {
-  opacity: 0.07;
-}
-
-body.dark .toggle-btn {
-  background-color: var(--bg-color-3);
-}
-
-body.dark .toggle-btn:hover {
-  background-color: brightness(110%);
-}
-
-body.dark .nav-link:hover::after,
-body.dark .nav-link.active::after {
-  opacity: 0.6;
 }
 
 body.dark .form-input:hover {
@@ -118,19 +92,6 @@ ul {
   margin: 0 auto;
 }
 
-.logo {
-  margin-right: 1.5rem;
-  font-family: "Abril Fatface", cursive;
-  font-size: 1.5rem;
-  color: var(--heading-color);
-  letter-spacing: 1px;
-  transition: 0.3s;
-}
-
-.logo span {
-  color: var(--main-color-1);
-}
-
 .sub-heading {
   color: var(--heading-color);
   text-transform: uppercase;
@@ -160,16 +121,6 @@ ul {
   transition: 0.3s color;
 }
 
-.cta {
-  margin-top: 3.5rem;
-  display: flex;
-  align-items: center;
-}
-
-.cta .btn {
-  margin-right: 1.5rem;
-}
-
 .btn {
   display: inline-block;
   padding: 0.9rem 1.75rem;
@@ -192,48 +143,10 @@ ul {
   background-color: var(--main-color-dark-1);
 }
 
-.btn.secondary-btn {
-  position: relative;
-  background-color: transparent;
-  color: var(--main-color-1);
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0px;
-  border-bottom: 2.5px solid var(--main-color-2);
-  border-radius: 0px;
-  padding: 0.15rem 0;
-  min-width: revert;
-}
-
-.btn.secondary-btn::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2.5px;
-  bottom: -2.5px;
-  left: 0;
-  background-color: var(--main-color-1);
-  transition: 0.3s ease-in-out;
-}
-
-.btn.secondary-btn:hover::before {
-  width: 100%;
-}
-
-.btn.secondary-btn.sm {
-  padding: 0.07rem 0.1rem;
-  font-size: 0.78rem;
-  border-bottom-width: 2px;
-}
-
-.btn.secondary-btn.sm::before {
-  height: 2px;
-  bottom: -2px;
-}
-
 .section {
   position: relative;
   padding: var(--section-padding) 0;
+  margin-top: -2%;
 }
 .form-input {
   display: inline-block;
@@ -265,21 +178,7 @@ ul {
   border-color: var(--main-color-1);
 }
 
-.triangle {
-  width: 95px;
-  opacity: 0.18;
-}
-
-.dots {
-  width: 112px;
-}
-
-.square {
-  width: 70px;
-  transition: 0.3s opacity;
-}
-
-/* --------------- Showcase Area Styling --------------- */
+/* --------------- Showcase Area  --------------- */
 
 .showcase-area {
   padding: 120px 0;
@@ -308,13 +207,13 @@ ul {
   margin: 0.8rem 0;
 }
 
-/* --------------- About Section Styling --------------- */
+/* --------------- Paragraph Section  --------------- */
 
-.about .text {
+.paragraph .text {
   margin: 3rem 0 4rem;
 }
 
-.about-grid {
+.paragraph-grid {
   display: grid;
   grid-template-columns: 190px 190px;
   grid-template-rows: 190px 190px;
@@ -325,7 +224,7 @@ ul {
   position: relative;
 }
 
-/* --------------- Skills Section Styling --------------- */
+/* --------------- Skills Section  --------------- */
 
 .skills {
   overflow: hidden;
@@ -416,7 +315,7 @@ ul {
   transition: 0.3s color;
 }
 
-/* --------------- Portfolio Section Styling --------------- */
+/* --------------- Portfolio Section  --------------- */
 
 .portfolio .container {
   transition: 0.4s;
@@ -483,167 +382,12 @@ ul {
   width: 105%;
 }
 
-.prt-desc {
-  padding: 1.1rem 1.6rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.prt-desc h3 {
-  font-size: 0.95rem;
-  color: var(--heading-color);
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-.prt-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  backdrop-filter: blur(0px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.prt-image:hover .prt-overlay {
-  pointer-events: auto;
-  background-color: var(--bg-color-transparent);
-  backdrop-filter: blur(10px);
-}
-
-.prt-icon {
-  color: hsl(var(--hue-1), 61%, 24%);
-  font-size: 1.1rem;
-  margin: 0 0.4rem;
-  background-color: var(--main-color-2);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: translateY(15px);
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.prt-icon:hover {
-  background-color: var(--main-color-dark-2);
-}
-
-.prt-image:hover .prt-icon {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: 0.3s var(--i);
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 11;
-  pointer-events: none;
-}
-
-.modal-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.slider-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, calc(-50% + 400px));
-  width: 90%;
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
-  align-items: center;
-  justify-items: center;
-  opacity: 0;
-  transition: 0.2s;
-}
-
-.slider-wrap img {
-  width: 100%;
-  display: none;
-  border-radius: 10px;
-}
-.navigation {
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 2rem;
-}
-
-.slider-wrap img.showImage {
-  display: block;
-}
-
-.portfolio.open .modal {
-  pointer-events: auto;
-}
-
-.portfolio.open .modal-overlay {
-  opacity: 1;
-}
-
-.portfolio.open .container {
-  transform: scale(0.9);
-}
-
-.portfolio.open .slider-wrap {
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: 0.45s 0.1s;
-}
-
-/* --------------- Contact Section Styling --------------- */
+/* --------------- Contact Section  --------------- */
 
 .contact .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4rem;
-}
-
-.mail {
-  color: var(--main-color-1);
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: 0.3s;
-}
-
-.mail i {
-  display: inline-block;
-  font-size: 1.5rem;
-  margin-left: 2px;
-  transform: translateY(3px);
-  transition: 0.3s margin-left;
-}
-
-.mail:hover {
-  color: var(--main-color-dark-1);
-}
-
-.mail:hover i {
-  margin-left: 10px;
 }
 
 .contact-form {
@@ -673,26 +417,13 @@ textarea.form-input {
   margin-bottom: 1.5rem;
 }
 
-.contact .square {
-  position: absolute;
-  left: 17%;
-  bottom: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.contact .triangle {
-  position: absolute;
-  left: 90%;
-  top: 98%;
-  transform: translate(-50%, -50%);
-}
-
 .contact_table td{
   padding: 15px;
   padding-top: 0;
   color: var(--heading-color)
 }
 
+/* FOOTER WRAPPER */
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -799,7 +530,7 @@ textarea.form-input {
   color: #ffffff;
 }
 
-/* WRAPPER 2 */
+/* CONTACT WRAPPER */
 .wrapper2 {
   list-style: none;
   margin-top: 10px;
@@ -889,7 +620,7 @@ a:visited {
  color: black;
 }
 
-/* FOOTER */
+/* --------------- Footer Section  --------------- */
 .footer_contact {
   left: 0;
   bottom: 0;
@@ -1147,15 +878,6 @@ a:visited {
     row-gap: 4rem;
   }
 
-  .showcase-image {
-    min-height: revert;
-    height: 100vw;
-    max-height: 570px;
-    max-width: 450px;
-    margin-top: 0px;
-    border-radius: 40px;
-  }
-
   .showcase-info {
     width: 100%;
     margin-top: 1rem;
@@ -1178,11 +900,11 @@ a:visited {
     top: 20%;
   }
 
-  .about .container {
+  .paragraph .container {
     grid-template-columns: 1fr;
   }
 
-  .about-grid {
+  .paragraph-grid {
     order: 3;
   }
 
@@ -1190,11 +912,11 @@ a:visited {
     display: none;
   }
 
-  .about .text {
+  .paragraph .text {
     margin: 1rem 0 1.5rem;
   }
 
-  .about-grid {
+  .paragraph-grid {
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px 150px;
     margin: 2.5rem 0 0 0;
@@ -1206,12 +928,12 @@ a:visited {
     width: 50px;
   }
 
-  .about-card h3 {
+  .paragraph-card h3 {
     font-size: 0.8rem;
     margin-top: 0.5rem;
   }
 
-  .about-grid::before {
+  .paragraph-grid::before {
     width: 150px;
     height: 150px;
     border-width: 10px;
@@ -1489,7 +1211,7 @@ a:visited {
   }
 }
 
-/* SIDE NAV BAR */
+/* --------------- Side Nav Bar  --------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 

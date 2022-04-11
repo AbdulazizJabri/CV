@@ -4,15 +4,6 @@ const sk_counters = document.querySelectorAll(".counter span");
 const progress_bars = document.querySelectorAll(".skills svg circle");
 
 const prt_section = document.querySelector(".portfolio");
-const zoom_icons = document.querySelectorAll(".zoom-icon");
-const modal_overlay = document.querySelector(".modal-overlay");
-const images = document.querySelectorAll(".images img");
-const prev_btn = document.querySelector(".prev-btn");
-const next_btn = document.querySelector(".next-btn");
-
-const links = document.querySelectorAll(".nav-link");
-
-const toggle_btn = document.querySelector(".toggle-btn");
 
 
 window.addEventListener("scroll", () => {
@@ -32,7 +23,6 @@ function updateCount(num, maxNum) {
   }
 }
 
-
 /* --------------- Reveal Animation --------------- */
 
 let sr = ScrollReveal({
@@ -41,7 +31,6 @@ let sr = ScrollReveal({
 });
 
 sr.reveal(".showcase-info", { delay: 600 });
-sr.reveal(".showcase-image", { origin: "top", delay: 700 });
 
 /* --------------- Skills Progress Bar Animation --------------- */
 
@@ -103,60 +92,8 @@ let mixer = mixitup(".portfolio-gallery", {
   },
 });
 
-/* --------------- Modal Pop Up Animation Animation --------------- */
-
-let currentIndex = 0;
-
-zoom_icons.forEach((icn, i) =>
-  icn.addEventListener("click", () => {
-    prt_section.classList.add("open");
-    document.body.classList.add("stopScrolling");
-    currentIndex = i;
-    changeImage(currentIndex);
-  })
-);
-
-modal_overlay.addEventListener("click", () => {
-  prt_section.classList.remove("open");
-  document.body.classList.remove("stopScrolling");
-});
-
-prev_btn.addEventListener("click", () => {
-  if (currentIndex === 0) {
-    currentIndex = 5;
-  } else {
-    currentIndex--;
-  }
-  changeImage(currentIndex);
-});
-
-next_btn.addEventListener("click", () => {
-  if (currentIndex === 5) {
-    currentIndex = 0;
-  } else {
-    currentIndex++;
-  }
-  changeImage(currentIndex);
-});
-
-function changeImage(index) {
-  images.forEach((img) => img.classList.remove("showImage"));
-  images[index].classList.add("showImage");
-}
-
-/* --------------- Modal Pop Up Animation Animation --------------- */
-
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  speed: 500,
-  autoplay: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 /* --------------- Typewriter --------------- */
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -207,9 +144,8 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid var(--heading-color)}";
         document.body.appendChild(css);
     };
