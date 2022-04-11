@@ -65,6 +65,7 @@ body.dark .form-input:hover {
 #darkModeIcon {
   width: 50px;
   cursor: pointer;
+  float: right;
 }
 
 /* --------------- General Styles --------------- */

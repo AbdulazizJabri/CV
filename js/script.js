@@ -3,9 +3,6 @@ const first_skill = document.querySelector(".skill:first-child");
 const sk_counters = document.querySelectorAll(".counter span");
 const progress_bars = document.querySelectorAll(".skills svg circle");
 
-const ml_section = document.querySelector(".milestones");
-const ml_counters = document.querySelectorAll(".number span");
-
 const prt_section = document.querySelector(".portfolio");
 const zoom_icons = document.querySelectorAll(".zoom-icon");
 const modal_overlay = document.querySelector(".modal-overlay");
