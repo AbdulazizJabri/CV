@@ -30,7 +30,7 @@ body.dark {
   --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
   --heading-color: hsl(var(--hue-1), 100%, 95%);
   --text-color: hsl(var(--hue-1), 14%, 51%);
-  --navbar-link-color: white;
+  --navbar-link-color: #dddddd;
 }
 
 body.dark .form-input:hover {
