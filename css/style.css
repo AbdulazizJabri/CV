@@ -261,6 +261,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .sk-progress {
@@ -283,15 +284,36 @@ ul {
   stroke-width: 5px;
   stroke: var(--main-color-1);
   stroke-linecap: round;
-  stroke-dasharray: 427;
-  stroke-dashoffset: 427;
-  transition: 0.3s;
 }
 
-@keyframes progress {
-  to {
-    stroke-dashoffset: var(--target);
-  }
+.sk-progress svg .one {
+  stroke-dasharray: 427;
+  stroke-dashoffset: 30;
+}
+
+.sk-progress svg .two{
+  stroke-dasharray: 427;
+  stroke-dashoffset: 60;
+}
+
+.sk-progress svg .three{
+  stroke-dasharray: 427;
+  stroke-dashoffset: 100;
+}
+
+.sk-progress svg .four{
+  stroke-dasharray: 427;
+  stroke-dashoffset: 180;
+}
+
+.sk-progress svg .five{
+  stroke-dasharray: 427;
+  stroke-dashoffset: 45;
+}
+
+.sk-progress svg .six{
+  stroke-dasharray: 427;
+  stroke-dashoffset: 45;
 }
 
 .counter {
@@ -303,7 +325,6 @@ ul {
   color: var(--heading-color);
   font-weight: 400;
   font-size: 0.9rem;
-  transition: 0.3s color;
 }
 
 .counter span {
