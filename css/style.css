@@ -45,7 +45,7 @@ body.dark .form-input:hover {
   right: 20px;
 }
 
-/* --------------- General Styles --------------- */
+/* --------------- GENERAL --------------- */
 
 *,
 *::before,
@@ -84,7 +84,7 @@ ul {
   list-style: none;
 }
 
-/* --------------- Reusable CSS Code --------------- */
+/* --------------- REUSABLE --------------- */
 
 .container {
   position: relative;
@@ -181,7 +181,7 @@ ul {
   border-color: var(--main-color-1);
 }
 
-/* --------------- Showcase Area  --------------- */
+/* --------------- SHOWCASE  --------------- */
 
 .showcase-area {
   padding: 120px 0;
@@ -210,7 +210,7 @@ ul {
   margin: 0.8rem 0;
 }
 
-/* --------------- Paragraph Section  --------------- */
+/* --------------- PARAGRAPH  --------------- */
 
 .paragraph .text {
   margin: 3rem 0 4rem;
@@ -227,7 +227,7 @@ ul {
   position: relative;
 }
 
-/* --------------- Skills Section  --------------- */
+/* --------------- SKILLS  --------------- */
 
 .skills {
   overflow: hidden;
@@ -318,7 +318,7 @@ ul {
   transition: 0.3s color;
 }
 
-/* --------------- Portfolio Section  --------------- */
+/* --------------- CERTIFICATES  --------------- */
 
 .portfolio .container {
   transition: 0.4s;
@@ -386,7 +386,7 @@ ul {
   padding-top: 9px;
 }
 
-/* --------------- Contact Section  --------------- */
+/* --------------- CONTACT  --------------- */
 
 .contact .container {
   display: grid;
@@ -623,7 +623,7 @@ a:visited {
  text-decoration: none;
 }
 
-/* --------------- Footer Section  --------------- */
+/* --------------- FOOTER  --------------- */
 .footer_contact {
   left: 0;
   bottom: 0;
@@ -699,27 +699,10 @@ a:visited {
     min-width: 100px;
   }
 
-  .btn.secondary-btn {
-    font-size: 0.85rem;
-  }
-
   .form-input {
     padding: 0.8rem 1.45rem;
     border-radius: 15px;
     font-size: 0.8rem;
-  }
-
-  .logo {
-    font-size: 1.45rem;
-  }
-
-  header .logo {
-    height: 100px;
-    line-height: 100px;
-  }
-
-  .nav-link {
-    font-size: 0.7rem;
   }
 
   .showcase-area {
@@ -739,9 +722,6 @@ a:visited {
     transform: scale(0.85);
   }
 
-  .services .container {
-    column-gap: 2.5rem;
-  }
   .contact .container {
     column-gap: 2.5rem;
   }
@@ -759,11 +739,6 @@ a:visited {
     margin-bottom: 0.8rem;
   }
 
-  .sub-box {
-    padding: 3.5rem 2.5rem;
-    column-gap: 2rem;
-  }
-
   .filter-btn {
     font-size: 0.7rem;
   }
@@ -777,60 +752,8 @@ a:visited {
     --section-padding: 4.5rem;
   }
 
-  .triangle {
-    width: 70px;
-  }
-
-  .dots {
-    width: 65px;
-  }
-
-  .square {
-    width: 55px;
-  }
-
-
-  .links {
-    order: 3;
-    flex-basis: 100%; /* width: 100% */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 0 2rem;
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  header nav {
-    justify-content: space-between;
-  }
-
-  .links ul {
-    position: relative;
-    flex-direction: column;
-  }
-
-  .nav-link {
-    margin: 1.5rem 0;
-    color: var(--heading-color);
-    font-weight: 500;
-  }
-
   .toggle-btn {
     margin: 0;
-  }
-
-  .links ul::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0.5px;
-    background-color: var(--heading-color);
-    opacity: 0;
-    top: -0.5rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
   }
 
   .overlay {
@@ -844,40 +767,6 @@ a:visited {
     opacity: 0;
     transition: 0.3s;
     pointer-events: none;
-  }
-
-  header {
-    height: 505px;
-    max-height: 100px;
-    overflow: hidden;
-  }
-
-  header.scrolled {
-    height: 485px;
-    max-height: 80px;
-  }
-
-  body.open header {
-    max-height: 505px;
-    background-color: var(--bg-color-2);
-  }
-
-  body.open .overlay {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  body.open .links ul::after {
-    opacity: 0.7;
-    width: 100%;
-  }
-
-  body.open header.scrolled {
-    max-height: 485px;
-  }
-
-  body.open .links {
-    opacity: 1;
   }
 
   .showcase-area .container {
@@ -894,19 +783,6 @@ a:visited {
 
   .showcase-area .text {
     margin: 0.2rem 0;
-  }
-
-  .cta {
-    margin-top: 1rem;
-  }
-
-  .showcase-area .circle {
-    width: 120px;
-  }
-
-  .showcase-area .square {
-    left: 80%;
-    top: 20%;
   }
 
   .paragraph .container {
@@ -937,11 +813,6 @@ a:visited {
     width: 50px;
   }
 
-  .paragraph-card h3 {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-  }
-
   .paragraph-grid::before {
     width: 150px;
     height: 150px;
@@ -962,65 +833,8 @@ a:visited {
     margin-top: 0;
   }
 
-  .services .container {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .services .text {
-    margin: 1.5rem 0 0.5rem;
-  }
-
-  .services-grid {
-    margin-top: 3.5rem;
-    column-gap: 1.5rem;
-    row-gap: 3.5rem;
-    max-width: 600px;
-  }
-
-  .srv-card {
-    padding: 1.8rem 1.7rem;
-    min-height: 260px;
-  }
-
-  .srv-card h3 {
-    font-size: 0.9rem;
-  }
-
-  .srv-card .text {
-    margin: 0.4rem 0 0.8rem;
-  }
-
   .portfolio-title {
     padding-bottom: 0;
-  }
-
-  .testimonials {
-    padding: var(--section-padding) 0;
-  }
-
-  .testimonials .container {
-    position: revert;
-    grid-template-columns: 1fr;
-    max-width: 620px;
-  }
-
-  .section-background {
-    transform: translateX(0);
-    left: 0;
-    border-radius: 0;
-    top: 0;
-    height: 100%;
-    background-image: linear-gradient(
-      45deg,
-      var(--main-color-2) 17%,
-      var(--main-color-1) 17%
-    );
-  }
-
-  .section-background .person,
-  .section-background .circle {
-    display: none;
   }
 
   .swiper {
@@ -1048,54 +862,9 @@ a:visited {
     margin-top: 3rem;
   }
 
-  .client {
-    grid-template-columns: 65px 1fr;
-  }
-
-  .client-info h4 {
-    margin-bottom: 0.2rem;
-    font-size: 0.97rem;
-  }
-
-  .client-info h5 {
-    font-size: 0.7rem;
-  }
-
-  .section-background .square {
-    left: 86%;
-    top: 12%;
-    width: 60px;
-  }
-
   .contact .container {
     grid-template-columns: 1fr;
     row-gap: 3rem;
-  }
-
-  .contact .square {
-    width: 60px;
-    bottom: 68%;
-    left: 75%;
-  }
-
-  .contact .triangle {
-    left: 20%;
-    top: 101%;
-  }
-
-  .sub-box {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-
-  .sub-box .heading {
-    margin-top: 0rem;
-  }
-
-  .subscription .square {
-    width: 60px;
-    left: 65%;
-    bottom: 30%;
   }
 }
 
@@ -1104,10 +873,6 @@ a:visited {
 @media (max-width: 500px) {
   .container {
     padding: 0 1rem;
-  }
-
-  .showcase-area .square {
-    display: none;
   }
 
   .showcase-area .container {
@@ -1125,16 +890,6 @@ a:visited {
   .skills-wrap {
     grid-template-columns: 1fr;
     row-gap: 1.5rem;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-
-  .srv-card {
-    transform: none !important;
-    min-height: auto;
   }
 
   .portfolio-header {
@@ -1163,49 +918,8 @@ a:visited {
     grid-row: 1/2;
   }
 
-  .prev-btn {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    z-index: 1;
-    color: #333;
-  }
-
-  .next-btn {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    z-index: 1;
-    color: #333;
-  }
-
   .contact-form p {
     font-size: 1.2rem;
-  }
-
-  .sub-box {
-    padding: 3rem 2.2rem;
-    row-gap: 0.5rem;
-  }
-
-  .sub-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .sub-box .heading {
-    font-size: 1.7rem;
-  }
-
-  .subscription .square {
-    display: none;
-  }
-
-  .subscription form {
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    justify-items: center;
   }
 
   footer {
