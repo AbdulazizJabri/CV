@@ -81,7 +81,7 @@ icon.onclick = function(){
 }
 
 
-/* --------------- Portfolio Filter Animation --------------- */
+/* --------------- Certificates Filter Animation --------------- */
 
 let mixer = mixitup(".portfolio-gallery", {
   selectors: {
