@@ -39,9 +39,8 @@ body.dark .form-input:hover {
   position: fixed;
   width: 50px;
   cursor: pointer;
-  top: 40px;
-  right: 50px;
-
+  top: 20px;
+  right: 20px;
 }
 
 /* --------------- General Styles --------------- */
@@ -666,6 +665,12 @@ a:visited {
 
   .navbar {
     visibility: hidden;
+  }
+
+  #darkModeIcon {
+    width: 35px;
+    top: 10px;
+    right: 10px;
   }
 
   .sub-heading {
