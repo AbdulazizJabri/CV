@@ -36,11 +36,12 @@ body.dark .form-input:hover {
 }
 
 #darkModeIcon {
+  position: fixed;
   width: 50px;
   cursor: pointer;
-  float: right;
-  margin-right: 30px;
-  padding-top: 30px;
+  top: 40px;
+  right: 50px;
+
 }
 
 /* --------------- General Styles --------------- */
