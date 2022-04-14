@@ -210,14 +210,6 @@ ul {
   margin: 0.8rem 0;
 }
 
-.scroll-down-text {
-  visibility: hidden;
-}
-
-.scrollDownArrow {
-  visibility: hidden;
-}
-
 /* --------------- PARAGRAPH  --------------- */
 
 .paragraph .text {
@@ -777,28 +769,6 @@ a:visited {
 /* --------------- 768px Screens --------------- */
 
 @media (max-width: 768px) {
-
-
-    .scroll-down-text {
-      margin-top: 18rem;
-      margin-left: 20px;
-      color: var(--navbar-link-color);
-      visibility: visible;
-    }
-
-    .scrollDownArrow {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      width: 24px;
-      height: 24px;
-      border-left: 1px solid var(--navbar-link-color);
-      border-bottom: 1px solid var(--navbar-link-color);
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      box-sizing: border-box;
-      visibility: visible;
-    }
 
   :root {
     --section-padding: 4.5rem;
