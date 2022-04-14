@@ -210,6 +210,14 @@ ul {
   margin: 0.8rem 0;
 }
 
+.scroll-down-text {
+  visibility: hidden;
+}
+
+.scrollDownArrow {
+  visibility: hidden;
+}
+
 /* --------------- PARAGRAPH  --------------- */
 
 .paragraph .text {
@@ -252,7 +260,7 @@ ul {
 .skills-wrap {
   display: grid;
   grid-template-columns: repeat(4, 150px);
-  margin-top: 2rem;
+  margin-top: 1rem;
   justify-content: space-between;
 }
 
@@ -379,7 +387,7 @@ ul {
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .prt-card {
@@ -391,6 +399,7 @@ ul {
   display: grid;
   grid-template-rows: 1fr auto;
   transition: 0.3s background-color;
+  margin: 0 1rem 0 1rem;
 }
 
 .prt-image {
@@ -769,6 +778,28 @@ a:visited {
 
 @media (max-width: 768px) {
 
+
+    .scroll-down-text {
+      margin-top: 18rem;
+      margin-left: 20px;
+      color: var(--navbar-link-color);
+      visibility: visible;
+    }
+
+    .scrollDownArrow {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      border-left: 1px solid var(--navbar-link-color);
+      border-bottom: 1px solid var(--navbar-link-color);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+      visibility: visible;
+    }
+
   :root {
     --section-padding: 4.5rem;
   }
@@ -892,6 +923,7 @@ a:visited {
 /* --------------- 500px Screens --------------- */
 
 @media (max-width: 500px) {
+
   .container {
     padding: 0 1rem;
   }
