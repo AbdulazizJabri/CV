@@ -379,7 +379,7 @@ ul {
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* gap: 2rem; */
+  gap: 2rem;
 }
 
 .prt-card {
@@ -391,7 +391,6 @@ ul {
   display: grid;
   grid-template-rows: 1fr auto;
   transition: 0.3s background-color;
-  margin: 0 1rem 0 1rem;
 }
 
 .prt-image {
